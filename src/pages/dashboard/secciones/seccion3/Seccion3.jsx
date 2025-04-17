@@ -8,10 +8,10 @@ const Seccion3 = () => {
       <h1 className="mb-4 text-primary">Sección 3: Front-end</h1>
 
 {/* Ejercicio 1: Mostrar órdenes */}
-<Card className="mb-4">
-        <Card.Header>
-          <h2 className="text-secondary">1. Ejercicio: Mostrar Órdenes</h2>
-        </Card.Header>
+        <Card className="mb-4">
+            <Card.Header>
+            <h2 className="text-secondary">1. Ejercicio: Mostrar Órdenes</h2>
+            </Card.Header>
         <Card.Body>
           <p>
              Haz clic en el botón para ir a la página de <Link to="/template">Template</Link>.

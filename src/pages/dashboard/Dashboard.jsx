@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
@@ -98,6 +98,72 @@ function Section1() {
   );
 }
 
+function Documentation() {
+  return (
+    <Container className="mt-4">
+      <h1 className="mb-4 text-primary">Bienvenido a mi Prueba Técnica - Especialista VTEX</h1>
+      <p>¡Hola y gracias por visitar esta entrega!</p>
+      <p>
+        Aquí encontrarás el desarrollo completo de la prueba para el rol de <strong>Especialista en VTEX</strong>, organizada por secciones según el documento entregado.
+      </p>
+
+      <hr />
+
+      <h2 className="text-danger">⚠️ Aviso Importante</h2>
+      <blockquote className="blockquote">
+        ❗ Las credenciales proporcionadas para el ambiente tottoqa arrojaron un error 401 Unauthorized al momento de realizar pruebas con las APIs de VTEX.
+      </blockquote>
+      <p>
+        Por esta razón, no fue posible validar las peticiones en tiempo real sobre el entorno productivo.
+      </p>
+
+      <hr />
+
+      <h2 className="text-success">✅ ¿Cómo resolví este inconveniente?</h2>
+      <p>
+        💡 Para mantener la funcionalidad de la prueba y facilitar su evaluación, desarrollé una <strong>página web interactiva</strong> donde puedes:
+      </p>
+      <ul>
+        <li>Ingresar tus propias <strong>credenciales de VTEX</strong> (<code>accountName</code>, <code>AppKey</code>, <code>AppToken</code>).</li>
+        <li>Ejecutar los ejercicios prácticos:
+          <ul>
+            <li>Creación de producto + SKU</li>
+            <li>Carga de inventario</li>
+            <li>Carga de precios</li>
+          </ul>
+        </li>
+        <li>Visualizar las respuestas a las preguntas conceptuales y técnicas.</li>
+      </ul>
+      <p>
+        📌 <strong>Esto permite simular y validar los procesos sin depender del entorno <code>tottoqa</code>.</strong>
+      </p>
+      <p>
+        🔗 <em>[Agrega aquí el enlace a la página interactiva, si la tienes publicada]</em>
+      </p>
+
+      <hr />
+
+      <h2 className="text-info">🧩 Estructura del contenido</h2>
+      <p>Cada sección fue abordada de forma detallada:</p>
+      <ol>
+        <li><strong>Sección 1 - Preguntas</strong>: Teoría sobre productos, inventario, promociones, categorías y arquitectura en VTEX IO.</li>
+        <li><strong>Sección 2 - API</strong>: Lógica y código para consumir los endpoints de VTEX (creación, inventario y precios).</li>
+        <li><strong>Sección 3 - Front-end</strong>: Componentes, página de producto personalizada y renderizado de órdenes.</li>
+        <li><strong>Sección 4 - Excel</strong>: Procesamiento de datos desde un archivo Excel.</li>
+      </ol>
+
+      <hr />
+
+      <h2 className="text-primary">🧠 Tecnologías Utilizadas</h2>
+      <ul>
+        <li><strong>React + TypeScript</strong></li>
+        <li>React Bootstrap</li>
+        <li><strong>XLSX (para procesamiento de Excel)</strong></li>
+        <li><strong>Notion (para documentación)</strong></li>
+      </ul>
+    </Container>
+  );
+}
 
 function Dashboard() {
   return (
@@ -121,6 +187,8 @@ function Dashboard() {
       {/* Contenido */}
       <Container className="mt-4">
         <Routes>
+          <Route path="/" element={<Navigate to="/dashboard/documentation" />} /> 
+          <Route path="documentation" element={<Documentation />} />
           <Route path="seccion1" element={<Section1 />} />
           <Route path="seccion2" element={<Section2 />} />
           <Route path="seccion3" element={<Section3 />} />

@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# 🧠 Prueba Técnica Especialista VTEX - David Valbuena
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+¡Hola! 👋
 
-## Available Scripts
+Bienvenido/a al repositorio donde encontrarás el desarrollo completo de la prueba técnica para el rol de **Especialista VTEX**.  
+Agradezco mucho el tiempo que te estás tomando para revisar mi trabajo. He organizado cada sección con claridad y enfoque práctico para demostrar mis conocimientos tanto en la plataforma VTEX IO como en integraciones vía API, lógica de negocio y herramientas complementarias como Excel.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ⚠️ Importante
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> **Las credenciales proporcionadas en el enunciado (accountName, AppKey, AppToken) están arrojando un error 401 Unauthorized al realizar las peticiones a las APIs de VTEX.**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🔒 Debido a este inconveniente, **no fue posible ejecutar pruebas reales directamente con el ambiente `tottoqa`**.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✅ Solución alternativa
 
-### `npm run build`
+Para continuar con la prueba de forma funcional y profesional, desarrollé una **página interactiva** en la cual puedes:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Ingresar tus propias credenciales de VTEX (`AppKey`, `AppToken`, `accountName`)
+- Probar los **ejercicios prácticos** de creación de productos, inventario y precios
+- Visualizar de forma clara las respuestas a las preguntas conceptuales y ejercicios de Front-End
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Esto permite una evaluación efectiva del código y su integración sin depender de la autenticación del ambiente proporcionado.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🔗 **Enlace a la página de prueba interactiva**: 
+📍 _[https://front-test-totto.vercel.app/dashboard]_
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🧩 Estructura de la prueba
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🔹 Sección 1: Preguntas
+Respuestas claras y detalladas sobre:
+- Creación de productos en VTEX IO
+- Inventario
+- Categorías y promociones
+- Estructura y personalización de apps en VTEX IO
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 🔹 Sección 2: Ejercicios prácticos con API
+- Creación de producto + SKU
+- Carga de inventario
+- Asignación de precios en tabla `Preciosb2b`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> Todos los ejercicios se pueden probar desde la página interactiva usando tus propias credenciales.
 
-## Learn More
+### 🔹 Sección 3: Front-End en VTEX IO
+- Página de producto personalizada con carrusel, botón de compra y descripción
+- Bloques configurables (`store`, `product`)
+- Visualización de órdenes específicas mediante integración de API
+- Explicación de arquitectura y comunicación entre componentes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 🔹 Sección 4: Excel
+Los ejercicios prácticos con Excel fueron desarrollados y documentados en **Notion**, y además automatizados mediante código en **React + TypeScript**, lo que permite subir el `.xlsx` y visualizar directamente:
+- Productos activos
+- Canales (Totto, B2B)
+- Stock
+- Discrepancias de SEO
+- Tabla dinámica por departamentos
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🧠 Tecnologías usadas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- React + TypeScript
+- XLSX (manejo de Excel)
+- Bootstrap React (UI)
+- Notion (documentación de análisis)
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+¡Gracias nuevamente por tu tiempo y quedo atento a cualquier retroalimentación! 🙌
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

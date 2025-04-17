@@ -10,14 +10,14 @@ import NavMenu from './NavMenu'; // Importar el componente NavMenu
 import NavMenuMobile from './NavMenuMobile/NavMenuMobile';
 import Footer from './Footer/Footer';
 import OrderTable from './OrderTable/OrderTable';
-
+import './Template.css'; // Importar el CSS del componente
 function Template() {
   return (
     <>
       {/* Primer Top Bar */}
-      <div className='d-none d-lg-block responsive-menu'>
+      <div className='d-none d-lg-block responsive-menu top-bar-1'>
         <Navbar bg="light" className="py-2 border-bottom">
-            <Container>
+            <Container fluid>
             <Nav className="me-auto">
                 <Nav.Link href="#whatsapp">Escríbenos por WhatsApp</Nav.Link>
                 <Nav.Link href="#servicio">Servicio al Cliente</Nav.Link>
@@ -42,7 +42,7 @@ function Template() {
       </Navbar>
 
      {/* Navbar Menu */}
-     <Navbar bg="light" expand="lg" className="py-3 border-bottom">
+     <Navbar bg="light" expand="lg" className="py-3 border-bottom navbar-main">
         <Container fluid>
           {/* Toggle Button for Mobile */}
           <div className="d-lg-none">
@@ -62,13 +62,14 @@ function Template() {
           {/* Search Component */}
           <div className='d-none d-lg-block responsive-menu'>
             <InputGroup className="" style={{ maxWidth: '300px' }}>
+            <Button variant="">
+                <FaSearch />
+                </Button>
                 <Form.Control
                 placeholder="¿Qué estás buscando?"
                 aria-label="¿Qué estás buscando?"
                 />
-                <Button variant="outline-secondary">
-                <FaSearch />
-                </Button>
+                
             </InputGroup>
           </div>
           
@@ -83,11 +84,14 @@ function Template() {
 
           {/* User and Cart Buttons */}
           <div className="d-flex">
-            <Button variant="outline-secondary" className="me-2">
-              <FaUser />
+            <Button variant="" className="'btn-user'">
+              {/* <FaUser /> */}
+              <span className="fa-user"></span>
             </Button>
-            <Button variant="outline-secondary">
-              <FaShoppingCart />
+            <Button variant="" className='btn-carrito'>
+              {/* <FaShoppingCart /> */}
+              <span className="fa-shopping-cart"></span>
+                
             </Button>
           </div>
         </Container>

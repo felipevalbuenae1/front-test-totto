@@ -167,7 +167,7 @@ const TottoFooter = () => {
 
       {/* Información de contacto */}
       <div className="contact-info">
-        <Container fluid className="d-flex justify-content-center align-items-center flex-row">
+        <Container fluid className="d-flex justify-content-center align-items-center flex-row position-relative">
             <div className="contact-item">
             <p><strong>NALSANI S.A.S</strong> Nit.800.020.706-9</p>
             </div>

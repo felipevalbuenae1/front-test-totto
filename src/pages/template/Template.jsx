@@ -43,7 +43,7 @@ function Template() {
 
      {/* Navbar Menu */}
      <Navbar bg="light" expand="lg" className="py-3 border-bottom navbar-main">
-        <Container fluid>
+        <Container fluid className='display-contents' style={{ display: 'contents' }}>
           {/* Toggle Button for Mobile */}
           <div className="d-lg-none">
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
